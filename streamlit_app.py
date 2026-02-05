@@ -18,7 +18,7 @@ if uploaded_file is not None:
     image = image.resize((28, 28))
     img_array = np.array(image) / 255.0
     img_array -= 0.5
-    img_array = img_array.reshape(784)
+    img_array = img_array.reshape(1, 784)
 
     # Mostrar la imagen subida
     st.image(image, caption="Imagen cargada", use_column_width=True)
