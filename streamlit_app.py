@@ -24,7 +24,7 @@ if uploaded_file is not None:
     st.image(image, caption="Imagen cargada", use_column_width=True)
 
     # Predicción
-    prediction = model.predict([img_array])
+    prediction = model.predict(img_array)
     classes = ["0", "1", "2", "3", "4",
                "5", "6", "7", "8", "9"]
     st.write("Predicción:", classes[np.argmax(prediction)])
