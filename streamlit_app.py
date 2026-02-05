@@ -8,7 +8,7 @@ model = load_model("digits_mnist.keras")
 
 # Crear la interfaz de usuario
 st.title("Clasificador dígitos MNIST")
-st.write("Sube una imagen para clasificarla en un dígito.")
+st.write("Sube una imagen de un digito MNIST para clasificarla.")
 
 uploaded_file = st.file_uploader("Sube una imagen de un dígito", type=["png", "jpg", "jpeg"])
 
